@@ -1,5 +1,3 @@
-
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +22,7 @@ section {
 
 h1, h2, h3 {
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #1a237e; /* Dark blue heading color */
 }
 
 p {
@@ -33,7 +31,7 @@ p {
 
 .btn {
     display: inline-block;
-    background: #3498db;
+    background: #c62828; /* Red button */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -42,13 +40,13 @@ p {
 }
 
 .btn:hover {
-    background: #2980b9;
+    background: #b71c1c; /* Darker red on hover */
 }
 
 /* Header */
 header {
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #1a237e; /* Dark blue header */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -64,7 +62,7 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #3498db;
+    color: white;
 }
 
 .nav-links {
@@ -78,25 +76,26 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    color: #f44336; /* Red hover effect */
 }
 
 .mobile-menu {
     display: none;
     cursor: pointer;
     font-size: 24px;
+    color: white;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/800') center/cover no-repeat;
+    background: linear-gradient(rgba(26, 35, 126, 0.7), rgba(198, 40, 40, 0.7)), url('/api/placeholder/1200/800') center/cover no-repeat; /* Blue to red gradient overlay */
     display: flex;
     align-items: center;
     text-align: center;
@@ -121,7 +120,7 @@ nav {
 
 /* Services Section */
 .services {
-    background-color: #f9f9f9;
+    background-color: #e8eaf6; /* Light blue background */
     text-align: center;
 }
 
@@ -142,6 +141,7 @@ nav {
     min-width: 300px;
     max-width: 350px;
     transition: transform 0.3s ease;
+    border-top: 5px solid #1a237e; /* Blue border top */
 }
 
 .service-card:hover {
@@ -151,7 +151,7 @@ nav {
 .service-icon {
     font-size: 40px;
     margin-bottom: 20px;
-    color: #3498db;
+    color: #c62828; /* Red icons */
 }
 
 /* About Section */
@@ -169,6 +169,7 @@ nav {
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
+    border: 5px solid #1a237e; /* Blue border */
 }
 
 .about-image img {
@@ -183,7 +184,7 @@ nav {
 
 /* Events Section */
 .events {
-    background-color: #f9f9f9;
+    background-color: #ffebee; /* Light red background */
     text-align: center;
 }
 
@@ -221,7 +222,7 @@ nav {
 }
 
 .event-date {
-    color: #3498db;
+    color: #c62828; /* Red date */
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -236,9 +237,10 @@ nav {
     max-width: 800px;
     margin: 50px auto 0;
     padding: 30px;
-    background: #f9f9f9;
+    background: #e8eaf6; /* Light blue background */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #c62828; /* Red border left */
 }
 
 .sermon-title {
@@ -253,7 +255,7 @@ nav {
 }
 
 .sermon-controls button {
-    background: #3498db;
+    background: #1a237e; /* Blue buttons */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -263,12 +265,12 @@ nav {
 }
 
 .sermon-controls button:hover {
-    background: #2980b9;
+    background: #0d1642; /* Darker blue on hover */
 }
 
 /* Contact Section */
 .contact {
-    background-color: #f9f9f9;
+    background-color: #e8eaf6; /* Light blue background */
 }
 
 .contact-container {
@@ -296,12 +298,13 @@ nav {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #1a237e; /* Blue labels */
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #c5cae9; /* Light blue border */
     border-radius: 5px;
 }
 
@@ -311,7 +314,7 @@ nav {
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #c62828; /* Red footer */
     color: white;
     padding: 50px 0 20px;
 }
@@ -343,13 +346,13 @@ footer {
 }
 
 .footer-links a {
-    color: #ecf0f1;
+    color: #ffcdd2; /* Light red text */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #3498db;
+    color: white;
 }
 
 .social-links {
@@ -364,13 +367,13 @@ footer {
 }
 
 .social-links a:hover {
-    color: #3498db;
+    color: #ffcdd2; /* Light red on hover */
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 /* Back to Top Button */
@@ -378,7 +381,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #3498db;
+    background: #1a237e; /* Blue back to top button */
     color: white;
     width: 50px;
     height: 50px;
@@ -416,7 +419,7 @@ footer {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: white;
+        background: #1a237e; /* Dark blue mobile menu */
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
@@ -446,4 +449,4 @@ footer {
     section {
         padding: 60px 0;
     }
-}
+};
